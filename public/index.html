@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juguetería Cósmica</title>
+        <!-- FONT CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="Css/main.css">
+        <link rel="icon" href="favicon.ico">
+        <script src="https://kit.fontawesome.com/586b704af0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <input type="checkbox" id="main-nav-toggle" class="main-nav-toggle">
+    <header class="main-header">
+        <div class="main-header__logo-container">
+            <img class="main-header__logo-container__image" src="Img/Logo_jugueteria-blanco.png" alt="Juguetería_Cometa">
+        </div>
+        <div class="main-header__search-form-container">
+            <label class="main-header__search-form-container__label" for="Busqueda"></label>
+            <input class="main-header__search-form-container__input" placeholder=" Buscar   " type="text" id="Busqueda">
+        </div>
+        <div class="main-header__cart-button-container">
+            <div class="main-header__cart-button-container-container">
+                <i id="open-cart" class="fa-solid fa-cart-shopping"></i>
+                <span class="main-header__cart-button-container-container__counter">0</span>
+            </div>
+        </div>
+        <!--  -->
+        
+        <div class="alert-add-product">
+            <p>has agregado un producto al carrito!!!</p>
+        </div>
+
+        <section  class="main-header__show">
+            <div class="main-header__show__cart">
+                <div class="main-header__show__cart__tittle">
+                    <h2>Carrito</h2>
+                    <div class="main-header__show__cart__tittle__icon">
+                        <i id="close-cart" class="fa-regular fa-circle-xmark"></i>
+                    </div>
+                </div>
+                <div class="carts-container">
+                    <section class="main-header__show__cart__products" id="buyProduct" class="disabled"> </section>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-header__hamburguer-button-container">
+            <label class="hamburger-button" for="main-nav-toggle">
+                <span class="hamburger-button__top-bread"></span>
+                <span class="hamburger-button__meat"></span>
+                <span class="hamburger-button__bottom-bread"></span>
+            </label>    
+        </div>
+        <div class="main-header__main-nav-container">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="#/inicio" class="main-nav__link">Inicio</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#/alta" class="main-nav__link">Alta</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#/contacto" class="main-nav__link">Contacto</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#/nosotros" class="main-nav__link">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+    </main>
+
+    <footer class="section-cards__footer-contact">
+        <div class="section-cards__footer__information">
+            <p>Términos y condiciones</p>
+            <p>Política de cookies</p>
+            <p>Política de privacidad</p>
+            <div class="section-cards__footer__icons">
+                <div class="section-cards__footer__icons__logo">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="section-cards__footer__icons__logo">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="section-cards__footer__icons__logo">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="section-cards__footer__icons__logo">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="section-cards__footer__method-pay">
+            <img src="Img/Footer/Visa.png" alt="Visa">
+            <img src="Img/Footer/Mastercard.png" alt="Mastercard">
+            <img src="Img/Footer/Mercadopago.png" alt="Mercado pago">
+            <img src="Img/Footer/Paypal.png" alt="Paypal">
+        </div>
+        <div class="section-cards__footer__additional">
+            <div class="section-cards__footer__additional__terms">
+                <p>© TODOS LOS DERECHOS RESERVADOS</p>
+                <P>Juegueteria-Cosmica.com SPA. Av. Catedral 1401, piso 5, Santiago de Chile.</P>
+            </div>
+            <div class="section-cards__footer__additional__design">
+                <p>Desarrollado por: Victorio Ortega</p>
+            </div>
+        </div>
+
+        <!--  -->
+        
+    </footer>
+
+    <script src="js/vendor/handlebars.min-v4.7.7.js"></script>
+    <script src="js/main.js" type="module"></script>
+    
+</body>
+</html>

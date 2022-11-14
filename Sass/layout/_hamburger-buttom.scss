@@ -1,0 +1,60 @@
+@use '../base/variables';
+
+
+.hamburger-button{
+    display: block;
+    cursor: pointer;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: white;
+    border: solid variables.$naranja;
+    position: relative;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+
+    &:hover{
+        background-color: variables.$naranja;
+        border: solid white;
+    }
+    
+    &__top-bread{
+        display: block;
+        position: absolute;
+        width: 80%;
+        height: 10%;
+        top: 20%;
+        left: 10%;
+        background-color: variables.$naranja; 
+    }
+    
+    &:hover .hamburger-button__top-bread{
+        background-color: white;
+    }
+    &__meat{
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        display: block;
+        width: 80%;
+        height: 10%;
+        transform: translateY(-50%);
+        background-color: variables.$naranja;
+    }
+    &:hover .hamburger-button__meat{
+        background-color: white;
+    }
+    &__bottom-bread{
+        position: absolute;
+        left: 10%;
+        bottom: 20%;
+        display: block;
+        width: 80%;
+        height: 10%;
+        background-color: variables.$naranja;
+        }
+        &:hover .hamburger-button__bottom-bread{
+            background-color: white;
+        }
+}
+

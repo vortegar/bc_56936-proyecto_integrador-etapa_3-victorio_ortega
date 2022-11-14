@@ -1,0 +1,45 @@
+{{#if products.length }}
+    {{#each products}}
+    <div  class="card" data-id="{{id}}">
+        <article class="card__article">
+            {{#if nuevo}}
+            <div class="card__new">
+                <p class="card__new__text">{{nuevo}}</p>
+            </div>
+            {{else}}
+            <div class="card__top">
+                <p class="card__top__text">{{topventas}}</p>
+            </div>
+            {{/if}}
+            <div class="card__image-container">
+                <img class="card__image" src={{img}}>
+            </div>
+            <div class="card__content">
+                <div class="card__heading">
+                    <h2 tittle={{id}} class="card__heading__title">{{nombre}}</h2>
+                </div>
+                <div class="card__information">
+                    <div class="card__description">
+                        <p>{{description}}</p>
+                    </div>
+                <div class="card__information__shop">
+                    <div>
+                        <div class="card__Price">
+                            <p class="card__Price__amount"> {{price}}</p>
+                        </div>
+                    <div>
+                        <p id={{id}} class="card__Price__quantity">0</p>
+                    </div>
+                </div>
+                <div id={{id}} class="card__buy">
+                    <span id={{id}} class="addCart">Añadir al carro</span>
+                </div>
+            </div>
+            </div>
+        </article>
+    </div>
+    {{/each}}
+{{else}}
+    <h2>No se encontraron productos</h2>
+{{/if}}
+

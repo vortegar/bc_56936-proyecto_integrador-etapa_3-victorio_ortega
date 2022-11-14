@@ -1,0 +1,29 @@
+{{#if productCarts.length }}
+    {{#each productCarts}}
+    <div id={{id}} class="main-header__show__cart__items">
+        <div class="main-header__show__cart__items__product">
+            <img src={{img}} class="main-header__show__cart__items__product__img" alt="" id="productBuyImg">
+        </div>
+        <div class="main-header__show__cart__items__text-items">
+            <div class="main-header__show__cart__items__text-items__description">
+                <p id={{id}} class="main-header__show__cart__items__text-items__description__inf">{{tittle}}</p>
+            </div>
+                <div class="main-header__show__cart__items__text-items__cost">
+                    <p class="main-header__show__cart__items__text-items__cost__unid">{{price}}</p>
+                    <p class="main-header__show__cart__items__text-items__cost__quant">{{productQuantity}}</p>
+                    <p class="main-header__show__cart__items__text-items__cost__total">{{totaldelproducto}}</p>                    
+                    <div id={{id}} class="main-header__show__cart__items__text-items__cost__trash">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+    <div id="btn-cart" class="main-header__show__cart__btns">
+        <button id="checkout" class="main-header__show__cart__btns__buy">Pagar</button>
+        <p class="main-header__show__cart__btns__buy__total"></p>
+    </div>
+{{else}}
+    <h2 class="empty-cart" >El carrito esta vacio</h2>
+{{/if}}

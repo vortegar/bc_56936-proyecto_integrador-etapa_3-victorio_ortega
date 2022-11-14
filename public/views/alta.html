@@ -1,0 +1,100 @@
+<main class="main">
+    <form action="/api/products" method="post" autocomplete="off" class="form"  id="form-alta-producto" enctype="multipart/form-data">
+        <div class="container-all">
+            <div class="container">
+                <div class="container-one__input">
+                    <div class="container-one__input-name">
+                        <label for="nombre">Nombre:</label>
+                        <div class="container-one__input-name__details">
+                            <input id="nombre" autofocus placeholder="Nombre del producto">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <div class="container-one__input-price">
+                        <label for="price">Precio</label>
+                        <div class="container-one__input-price__details">
+                            <input id="price" placeholder="precio del producto" type="number">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <div class="container-one__input-stock">
+                        <label for="stock">Stock</label>
+                        <div class="container-one__input-stock__details">
+                            <input id="stock" placeholder="cantidad del producto" type="number">
+                            <div class="error"></div>     
+                        </div>
+                    </div>
+                    <div class="container-one__input-mark">
+                        <label for="marca">Marca</label>
+                        <div class="container-one__input-mark__details">
+                            <input id="marca" autofocus placeholder="Marca del producto">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <div class="container-one__input-category">
+                        <label for="category">Categoria</label>
+                        <div class="container-one__input-category__details">
+                            <input id="category" autofocus placeholder="Categoria del producto">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="container-two__input">
+                <div class="container-two__input-short">
+                    <label for="description">Descricion Corta</label>
+                    <div class="container-two__input-short__details">
+                        <textarea name="input-short" placeholder="Agrega un comentario corto" cols="34" rows="2" id="description"></textarea>
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="container-two__input-large">
+                    <label for="detalles">Descrición Larga</label>
+                    <div class="container-two__input-large__details">
+                        <textarea name="input-large" placeholder="Agrega un comentario largo" cols="34" rows="3" id="detalles"></textarea>
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="container-two__input-delivery">
+                    <label for="delivery">Envio Sin Cargo</label>
+                    <input id="delivery" type="checkbox">
+                </div>
+                <div class="container-two__input-ageSince">
+                    <label for="ageSince">Edad desde</label>
+                    <div class="container-two__input-ageSince__details">
+                        <input id="ageSince" placeholder="Producto para mayores de:" type="number">
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="container-two__input-ageUntil">
+                    <label for="ageUntil">Edad Hasta</label>
+                    <div class="container-two__input-ageUntil__details">
+                        <input id="ageUntil" placeholder="Producto para menores de:" type="number">
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="container-two__input-img">
+                    <label for="img">Foto producto</label>
+                    <div class="container-two__input-img__details">
+                        <input id="img" type="file">
+                        <div class="error"></div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="buttons">
+            <button id= "btnRestablecer" type="reset">Reset</button>
+            <button id="btn-create">Crear</button>
+            <button type="button" id="btn-update" disabled>Guardar</button>
+            <button type="button" id="btn-cancel" disabled>Cancelar</button>
+        </div>
+    </div>
+    </form>
+    
+    <section class="section-products-table">
+        <h2 class="section-products-table__tittle">Listado de productos</h2>
+        <div class="products-table-container"></div>
+    </section>
+
+</main>
+
+
