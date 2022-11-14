@@ -1,4 +1,5 @@
-import Joi from "joi";
+// import Joi from "joi";
+const joi = require('joi');
 
 class ProductValidator {
     

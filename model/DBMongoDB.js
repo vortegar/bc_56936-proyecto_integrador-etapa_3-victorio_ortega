@@ -1,5 +1,6 @@
 import config from '../config.js';
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
+const mongoose = require('mongoose');
 
 class DBMongoDB {
 

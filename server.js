@@ -1,4 +1,5 @@
-import express from 'express';
+// import express from 'express';
+const express = require('express');
 import routerProducts from './router/products.js';
 // import DB from './model/products-mongodb.js';
 import config from './config.js'
