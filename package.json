@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/vortegar/bc_56936-proyecto_integrador-etapa_2-victorio_ortega#readme",
   "dependencies": {
+    "engines": "^0.4.0",
     "express": "^4.18.2",
     "joi": "^17.6.4",
     "mongoose": "^6.7.0",
     "multer": "^1.4.5-lts.1",
     "multiparty": "^4.2.3"
-  }
+  },
+  "engines" : {"node": "16.x"}
 }
